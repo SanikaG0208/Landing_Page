@@ -19,7 +19,7 @@ The page contains a Supabase **publishable** key, intended for browser use. It d
 
 `supabase/schema.sql` documents the database setup already applied to this project. Do not run it again against the existing table. Adjust the project URL and publishable key in `index.html` when using another database.
 
-The form validates required fields, business email, and phone format; displays a submitting state; and confirms success only after Supabase accepts the registration. Submission IDs protect retries from duplicate records. One labeled test registration was submitted through the page and verified in the database on October 22, 2026.
+The form validates required fields, business email, and phone format, then displays a submitting state. After Supabase accepts the registration, it redirects in the same tab to the [ON24 registration/login page](https://golive.on24.com/event/5503420/en/2AEC6F49263C2417E79D6625D5F4D747/registration/login). Failed submissions stay on the form with an error message. No contact details are appended to the redirect URL. Submission IDs protect retries from duplicate records. One labeled test registration was submitted through the page and verified in the database on October 22, 2026.
 
 ## Files
 

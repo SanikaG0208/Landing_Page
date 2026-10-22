@@ -337,6 +337,7 @@ registrationForm.addEventListener('submit',async function(e){
   message.textContent='Thank you! Your registration has been saved successfully.';
   message.classList.add('show');button.textContent='REGISTERED';
   this.dataset.savedSubmission=registrationSubmissionId;
+  window.location.assign('https://golive.on24.com/event/5503420/en/2AEC6F49263C2417E79D6625D5F4D747/registration/login');
  }catch(error){
   message.textContent=error.name==='AbortError'?'The request timed out. Please try again.':error instanceof TypeError?'Unable to connect. Check your internet connection and try again.':error.message;
   message.classList.add('show','error');message.setAttribute('role','alert');
